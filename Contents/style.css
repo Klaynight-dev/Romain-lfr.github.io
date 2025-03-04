@@ -1,0 +1,355 @@
+/* Déclaration des Polices */
+@font-face {
+    font-family: "GreatVibe";
+    src: url("./GreatVibe/GreatVibes-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow";
+    src: url("./Barlow/Barlow-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow-Bold";
+    src: url("./Barlow/Barlow-SemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Style par défaut */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Téléchargement */
+
+.download {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff7f1;
+    color: #966f53;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Barlow-Bold', arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Style du body */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45em;
+    background-image: url(./images/background.jpg);
+    
+}
+
+/* Portfolio */
+
+body div:first-child {
+    padding: 30px;
+    background: #333;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: #fff7f1;
+    font-size: 6em;
+    margin-bottom: 10px;
+    font-family: 'GreatVibe', arial, sans-serif;
+}
+
+p {
+    color: #fff7f1;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 80em;
+    font-family: 'Barlow', arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container a {
+    display: inline-block;
+}
+
+.container img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* JavaScript */
+
+.java-container {
+    position: relative;
+    width: 400px;
+    height: 250px;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.slide.active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.java-points {
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.point {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.point.active {
+    background-color: white;
+    transform: scale(1.5);
+}
+
+/* CV */
+
+.cv {
+    padding: 30px;
+    background: #333;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 65%;
+}
+
+.cv img{
+    height: 85em;
+}
+
+.cv .download {
+    font-size: larger;
+}
+
+/* Projet Snake */
+
+.snake-container {
+    margin-top: 50px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+
+.snake {
+    margin-top: 56%;
+}
+
+.snake h2 {
+    margin-bottom: 15px;
+    font-size: 4em;
+    color: #966f53;
+    font-family: 'GreatVibe', arial, sans-serif;
+}
+
+.snake figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff7f1;;
+    text-align: center;
+    width: 100%;
+}
+
+.snake a {
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Barlow-Bold', arial, sans-serif;
+    margin: 1% 5%;
+    color: #333;
+    background-color: #966f53;
+    width: 20em;
+    border: solid;
+}
+
+.snake figure:last-child {
+    margin-top: 20px;
+    margin-left: 53%;
+}
+
+/* Projet Snake Automatique */
+
+.snake-container-auto {
+    margin-top: 50px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.snake-auto {
+    margin-top: 46%;
+}
+
+.snake-auto h2 {
+    margin-bottom: 15px;
+    font-size: 4em;
+    color: #966f53;
+    font-family: 'GreatVibe', arial, sans-serif;
+}
+
+.snake-auto figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff7f1;;
+    text-align: center;
+    width: 100%;
+}
+
+.snake-auto a {
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Barlow-Bold', arial, sans-serif;
+    margin: 1% 5%;
+    color: #333;
+    background-color: #966f53;
+    width: 20em;
+    border: solid;
+}
+
+.snake-auto figure:last-child {
+    margin-top: 20px;
+    margin-left: 53%;
+}
+
+/* Site Web JO*/
+
+.web {
+    margin-top: 35em;
+    max-width: 1300px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.web article {
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: 5em;
+    color: white;
+    line-height: 22px;
+}
+
+.web li {
+    margin-left: 4em;
+}
+
+.web li:first-child {
+    margin-left: 0;
+}
+
+.web li:last-of-type {
+    margin-bottom: 1em;
+}
+
+.web article h4 {
+    font-size: 2em;
+    padding-top:11%;
+    text-align: center;
+    background-color: #966f53;
+    width: 85%;
+    height: 8em;
+    border-radius: 10%;
+    font-family: 'Barlow-Bold', Times, serif;
+}
+
+.web figure {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.web figure article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.web figure article:first-child {
+    flex-direction: row-reverse;
+}
+
+.web figure article img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
