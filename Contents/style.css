@@ -23,8 +23,8 @@
 /* Style par défaut */
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -49,7 +49,6 @@ body {
     align-items: center;
     height: 45em;
     background-image: url(./images/background.jpg);
-    
 }
 
 /* Portfolio */
@@ -171,7 +170,7 @@ p {
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 65%;
+    margin-top: 60%;
 }
 
 .cv img{
@@ -197,7 +196,7 @@ p {
 
 
 .snake {
-    margin-top: 56%;
+    margin-top: 50%;
 }
 
 .snake h2 {
@@ -292,10 +291,22 @@ p {
 /* Site Web JO*/
 
 .web {
-    margin-top: 35em;
+    margin-top: 70%;
     max-width: 1300px;
     padding: 20px;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background: #333;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 2);
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .web article {
@@ -305,6 +316,12 @@ p {
     margin-right: 5em;
     color: white;
     line-height: 22px;
+    margin-bottom: 1em;
+}
+
+.web article p {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .web li {
@@ -315,41 +332,67 @@ p {
     margin-left: 0;
 }
 
-.web li:last-of-type {
-    margin-bottom: 1em;
-}
-
-.web article h4 {
-    font-size: 2em;
-    padding-top:11%;
-    text-align: center;
-    background-color: #966f53;
-    width: 85%;
-    height: 8em;
-    border-radius: 10%;
-    font-family: 'Barlow-Bold', Times, serif;
-}
-
-.web figure {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.web figure article {
+.web div {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.web h2 {
+    color: white;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    background-color: #8B6A56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
+    font-size: xx-large;
 }
 
-.web figure article:first-child {
-    flex-direction: row-reverse;
-}
-
-.web figure article img {
-    width: 40%;
+.web img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 575px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.web p {
+    width: 610px;
+    color: azure;
+    font-size: x-large;
+    text-align: center;
+}
+
+.web p:nth-child(1) {
+    margin-right: 2em;
+}
+
+.web h3 {
+    margin: 0;
+}
+
+.web ul {
+    font-size: larger;
+    text-align: left;
+    padding-right: 20px;
+    color: white;
+}
+
+.web ul:nth-child(1) {
+    margin-left: -1em;
+}
+
+.web ul:last-child {
+    margin-left: 3em;
+}
+
+.web ul li:first-child {
+    padding-bottom: 15px;
+    list-style-type: none;
 }
