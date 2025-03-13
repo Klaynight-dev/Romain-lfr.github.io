@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Teddy Riner</title>
+		<meta name="description" content="Description détaillés de la carière de Tedy Riner">
+		<meta name="keywords" content="Tedy, Riner, Judo, Jo, Médaille, Or, France, Sport, Athlète">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+    <body>
+        <header> <!--Header-->
+            <a href="https://www.olympics.com/fr/olympic-games/paris-2024"><img src="./images/paris_logo.png" alt="paris 2024" title="pais 2024"></a>
+            <div><a href="https://www.olympics.com/fr/olympic-games/paris-2024"> Les sites </a></div>
+            <div><a href="https://presse.paris2024.org/actualites/calendrier-des-jeux-paralympiques-de-paris-2024-par-epreuves-9dc1-e0190.html">Paralympiques</a></div>
+            <div><a href="https://www.olympics.com/fr/olympic-games/paris-2024/athletes">Athlète</a></div>
+            <div><a href="https://www.olympics.com/fr/olympic-games/paris-2024/results/judo">Disciplines</a></div>
+            <div><a href="https://www.olympics.com/fr/olympic-games/paris-2024/stories">Meilleurs Moments</a></div>
+            <img src="./images/parametre.jpg" alt="parametre" title="parametre">
+        </header>
+        <main>
+            <section class="profil"><!--Profil-->
+                <figure ><!--Photo et Nom-->
+                    <figcaption><h5>TEDDY RINER</h5></figcaption>
+                    <img src="./images/tedy_profil.jpg" alt="Teddy Riner" title="Teddy Riner">
+                </figure>
+                <div><!--Info Sportif-->
+                    <figure>
+                        <img src="./images/naissance.jpg" alt="pays de naissance" title="pays de naissance">
+                        <figcaption>Guadeloupe(FRA)</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./images/anniverssaire.png" alt="gateau" title="Gatêau">
+                        <figcaption>7 Avril 1989</figcaption>
+                    </figure>
+
+                    <figure >
+                        <img src="./images/FRA.jpg" alt="France" title="France">
+                        <figcaption>FRA</figcaption>
+                    </figure>
+                    
+                    <figure>
+                        <img src="./images/Judo.jpg" alt="Judo" title="Judo">
+                        <figcaption>Judo</figcaption>
+                    </figure>
+                </div>
+                <figure><!--Réseaux sociaux-->
+                    <figure>
+                        <a href="https://www.tiktok.com/@teddyriner"><img src="./images/tiktok.PNG" alt="Tiktok" title="Tiktok"></a>
+                    </figure>
+                    <figure>    
+                        <a href="https://twitter.com/teddyriner"><img src="./images/X.png" alt="X" title="X"></a>
+                    </figure>
+                    <figure>
+                        <a href="https://www.instagram.com/teddyriner"><img src="./images/Instagram.png" alt="Instagram" title="Instagram"></a>
+                    </figure>
+                </figure>
+            </section>
+            
+            <table class="Medaille">
+                <tr>
+                    <th></th>
+                    <td><img src="./images/or.png" alt="Or" title="Or"></td>
+                    <td><img src="./images/argent.png" alt="Argent" title="Argent"></td>
+                    <td><img src="./images/bronze.png" alt="Bronze" title="Bronze"></td>
+                </tr>
+                <tr>
+                    <th>Médailles obtenues Jeux olympiques</th>
+                    <td>5</td>
+                    <td>-</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                   <th>Championnats du monde </th>
+                   <td>11</td>
+                   <td>1</td>
+                   <td>-</td>
+                </tr>
+                <tr>
+                    <th>Ch. du monde par équipes </th>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Championnats d'Europe </th>
+                    <td>5</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Ch. d'Europe par équipes </th>
+                    <td>-</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Championnats de France </th>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Ch. de France par équipes </th>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Grands Chelems </th>
+                    <td>8</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <hr>
+
+            <div class="Actu">
+                <figure>
+                    <a href="https://www.20minutes.fr/sport/teddy_riner/"><img src="./images/actu.webp" alt="actualité" title="actualité"></a>
+                    <figcaption><a href="https://www.20minutes.fr/sport/teddy_riner/">Teddy Riner : Actualités, vidéos, <br> images et infos en direct</a></figcaption>
+                </figure>
+            </div>
+
+            <div id="menu" class="participation-container">
+                <div class="title">Participation JO</div>
+                <div class="year" onclick="showDetails('2008')">2008</div>
+                <div class="year" onclick="showDetails('2012')">2012</div>
+                <div class="year" onclick="showDetails('2016')">2016</div>
+                <div class="year" onclick="showDetails('2020')">2020</div>
+                <div class="year" onclick="showDetails('2024')">2024</div>
+            </div>
+            
+            <div id="details" class="details-container hidden">
+                <button class="back-button" onclick="goBack()">Retour</button>
+                <div class="details-content">
+                    <h2 id="selected-year">2000</h2>
+                    <p id="discipline-container"></p>
+                    <ul id="medals-list"></ul>
+                    <img id="image" src="./images/2008.png" alt="Image année JO" />
+                </div>
+            </div>
+
+            <div class="bio">
+                <article><!--Biographie-->
+                    <h2>Biographie</h2>
+                    <p>
+                        Teddy Riner est considéré par beaucoup comme le plus grand judoka de tous les temps. La légende française peut se targuer d’avoir remporté 11 titres mondiaux, soit le plus grand nombre dans l’histoire du judo, et trois médailles d’or olympiques.
+                    </p>
+                </article>
+                
+                
+                <img src="./images/tedy_long.jpg" title="teddy rinner" alt="tedy rinner">
+                <article>
+                    <h2>L’héritier du trône du judo</h2>
+
+                    <p>
+                        Né le 7 avril 1989 à Pointe-à-Pitre, en Guadeloupe, Riner a commencé le sport à l’âge de cinq rans dans un club multiport d’Aquaboulevard, à Paris. Au cours de ses premières années, il a essayé différents sports, tels que l’escalade, le golf, le tennis et la natation, mais c’est finalement le judo qui est devenu sa passion.
+                        À 15 ans, il a intégré l’équipe de France à l’INSEP, avant d’entamer sa carrière professionnelle deux ans plus tard. Riner a aussitôt régné en maître sur le tatami, raflant tous les titres nationaux, européens et mondiaux en junior, pour s’imposer comme l’héritier de la légende du judo français, David Douillet.
+                    </p>
+                    
+                </article>
+
+                <article>
+                    <h2>Une décennie de succès</h2>
+
+                    <p>
+                        En 2007, à seulement 18 ans, Riner est devenu le plus jeune champion du monde de judo grâce à sa médaille d’or récolté aux Championnats du monde de Rio de Janeiro, un an après avoir décroché le titre chez les juniors.
+                        Depuis lors, il s’est adjugé dix autres titres mondiaux, ainsi que quatre médailles olympiques et cinq titres de champion d’Europe, preuve de sa domination sans partage dans ce sport.
+                        Au cours de son illustre carrière chez les pros, Riner n’a connu que cinq défaites, seules ombres au tableau d’un palmarès par ailleurs inégalé. De 2010 à 2020, soit durant toute une décennie, il a dominé la planète judo et affirmé son autorité.
+                        Au cours de cette décennie, il a enchaîné une impressionnante série de 154 matchs consécutifs sans défaite. Seul le Japonais Kageura Kokoro a réussi à mettre fin à cette invincibilité lors du troisième tour du Grand Chelem de Paris en 2020.
+                        N’ayant aucune intention de mettre un point final à sa stupéfiante carrière après des Jeux Olympiques de Paris à domicile, Riner a déjà fait part de son intention de la poursuivre au-delà de 2024.
+                        « Je ne peux pas dire avec certitude que j’arrêterai en 2024. Si tout se passe bien, je pourrai poursuivre ma carrière au-delà. Je n’ai pas de mal à gérer les voyages et les entraînements, je suis en excellente forme physique et je suis enthousiaste dans ce que je fais. La fatigue n’est pas un problème pour moi actuellement, alors pourquoi m’arrêterais-je si je suis passionné par ce que je fais ? Si je me focalise sur 2024, je considère également la possibilité de viser 2028 », a-t-il révélé à L’Équipe.
+                    </p>
+                </article>
+            </div>
+
+            <div class="moment">
+                <figure> <!--Moment fort-->
+                    <nav>
+                        
+                        <h2>Moment fort :</h2>
+                        <ul> 
+                            <li>Judoka le plus titré</li>
+                            <li>11 x Champion du Monde</li>
+                            <li>5 Medaille d'or Olympiques</li>
+                            <li>8 ans d'invincibilité</li>
+                        </ul>
+                    </nav>
+                    <video src="./Tedy_rinner_moment_fort.mp4" controls="controls" poster="./images/poster tedy.png"></video>
+                    
+                </figure>
+            </div>
+            <script src="script.js"></script>
+        </main>
+        <footer> <!--Footer-->
+            
+
+
+
+        </footer>
+    </body>

@@ -1,0 +1,820 @@
+/* Déclaration des Polices*/
+
+@font-face {
+    font-family: "Montserrat_Bold";
+    src: url("./Montserrat/Montserrat-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat_SemiBold";
+    src: url("./Montserrat/Montserrat-SemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato/") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header */
+
+header > div {
+    display: flex;
+    padding: 10px;
+    background-color: #D9D9D9;
+    border: 2px solid #D9D9D9;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 15px;
+}
+
+header {
+
+    background: -webkit-linear-gradient(90deg, #2b5094,#c69340);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(90deg, #2b5094,#c69340);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat_SemiBold', Arial, sans-serif;
+}
+
+header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+header a:link {
+    color: #2b5094;
+    text-decoration: none;
+}
+  
+header a:visited {
+    color: #cc8500;
+    text-decoration: none;
+}
+  
+header a:hover {
+    color: #cc8500;
+    text-decoration: underline;
+}
+
+header a:active {
+    color: #2b5094;
+    text-decoration: underline;
+}
+
+/* profil */
+
+/* Phtot + nom */
+.profil > figure > figcaption > h5 {
+    font-family: 'Montserrat_Bold', arial, sans-serif;
+    font-size: medium;
+    line-height: 0;
+}
+
+.profil > figure > img{
+    display: block;
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+/* Pictogram */
+.profil > figure {
+    position: relative;
+    display: inline-block;
+}
+
+.profil figcaption {
+    font-size: 20px;
+    line-height: 4;
+    text-align: center;
+}
+
+.profil div {
+    display: flex;
+    flex-direction: column; /* Pour disposer les éléments verticalement */
+    align-items: flex-start; /* Aligne les figures à gauche */
+    gap: 20px; /* Espacement entre les figures */
+    margin-top: 65px;
+}
+
+.profil div figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+}
+
+.profil div figure img{
+    height: 30px;
+    margin-right: 15px; /* Espacement entre l'image et le texte */
+}
+
+.profil {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Lato', arial, sans-serif;
+}
+/* réseaux */
+
+.profil figure figure {
+    display: flex;
+    align-items: center;
+}
+
+.profil figure figure img {
+    height: 70px;
+    width: auto;
+}
+
+/* Medaille */
+
+.Medaille {
+    border-collapse: collapse; /* Pas d'espacement entre les cellules */
+    margin: -3px 0;
+    font-family: 'Lato', Arial, sans-serif;
+    position: absolute;
+    top: 6em;
+    right: 5em;
+    height: 0;
+    width: 38em;
+}
+
+/* Style des cellules de tableau */
+.Medaille th, td {
+    border: 1px solid #ddd;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Medaille */
+.Medaille tr > td > img {
+    height: 20px;
+    width: auto;
+}
+
+/* Style des en-têtes */
+.Medaille th {
+    background-color: #2b5094;
+    color: white;
+}
+
+/* Couleur des medailles */
+.Medaille td:nth-child(2), th:nth-child(2) {
+    background-color: #c69340; /* Couleur pour la deuxième colonne */
+}
+
+.Medaille td:nth-child(3), th:nth-child(3) {
+    background-color: #888888; /* Couleur pour la troisième colonne */
+}
+
+.Medaille td:nth-child(4), th:nth-child(4) {
+    background-color: #B47B27; /* Couleur pour la quatrième colonne */
+}
+
+/* Actu */
+
+.Actu {
+    font-family: 'Montserrat_SemiBold', Arial, sans-serif;
+}
+
+.Actu > figure {
+    float: right;
+    text-align: center;
+    background-color: #e0e0e0;
+    margin: 20px;
+    margin-right: 10em;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+}
+
+.Actu > figure img {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.Actu figcaption{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Jo participation */
+  
+.participation-container {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    transition: transform 0.5s ease, height 0.5s ease;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+}
+  
+.title {
+    background-color: #f0a500;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+  
+.year {
+    background-color: #0052cc;
+    color: #f0a500;
+    font-size: 16px;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #cc8500;
+    transform: scale(1.05);
+}
+  
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: all 0.5s ease;
+}
+  
+.details-container.expanded {
+    width: 700px;
+    height: auto ;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+}
+
+.year.selected-year {
+    background-color: #ffa726; /* Couleur d'arrière-plan après sélection */
+    color: white; /* Couleur du texte pour une meilleure lisibilité */
+    font-weight: bold; /* Mettre le texte en gras */
+}
+  
+.hidden {
+    display: none;
+}
+  
+.back-button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #cc8500;
+    transform: scale(1.05);
+}
+  
+.details-content h2 {
+    color: #cc8500;
+    margin-bottom: 10px;
+    background-color: #003d99;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.details-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#medals-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+  
+#medals-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+#medals-list li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}  
+
+/* Transitions et animations */
+.hidden {
+    display: none;
+}
+
+.year:hover, .back-button:hover {
+    transform: scale(1.1);
+}
+
+/* Biographie */
+
+.bio {
+    margin: 20px;
+    font-family: 'Lato', arial, sans-serif;
+}
+
+.bio > h2 {
+    margin-top: 0;
+    margin-bottom: -50px;
+    font-family: 'Montserrat_SemiBold', arial, sans-serif;
+}
+
+.bio article:first-of-type h2 {
+    font-family: 'Montserrat_Bold', arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+.bio img {
+    float: right;
+    width: 500px;
+    height: auto; 
+    border-radius: 2%;
+    bottom: 50px;
+}
+
+.bio article img {
+    max-width: 40%;  /* Limite la largeur de l'image à 40% de la largeur de l'article */
+    height: auto;
+    border-radius: 8px;  /* Optionnel : pour des coins arrondis */
+}
+
+/* Moment fort */
+
+.moment {
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    color: #c69340;
+    background-color: #003d99;
+    border-radius: 20px;
+    margin: 15px;
+    
+}
+
+.moment video {
+    margin: 15px;
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.moment nav {
+    float: right;
+    margin-top: 7%;
+    margin-right: 2%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* Animation */
+main img { 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main img:hover {
+    transform: scale(1.1);
+}
+
+/*------------Media Query------------*/
+
+@media screen and (max-width: 480px) /* Zoom 400 % */
+{
+
+@font-face {
+    font-family: "Montserrat_Bold";
+    src: url("./Montserrat/Montserrat-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat_SemiBold";
+    src: url("./Montserrat/Montserrat-SemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato/") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header */
+
+header > div {
+    display: flex;
+    padding: 5px;
+    background-color: hsl(0, 0%, 85%);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    height: 5px;
+}
+
+header {
+    background: -webkit-linear-gradient(90deg, #2b5094,#c69340);/* Chrome 10-25, Safari 5.1-6 */                          
+    background: linear-gradient(90deg, #2b5094,#c69340);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    border-radius: .5em;
+    width: 345px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5px;
+    font-family: 'Montserrat_SemiBold', Arial, sans-serif;
+}
+
+header  img {
+    height: 20px;
+    width: 20px;
+}
+
+/* profil */
+
+/* Phtot + nom */
+.profil > figure > figcaption > h5 {
+    font-family: 'Montserrat_Bold', arial, sans-serif;
+    font-size: 5px;
+}
+
+.profil > figure > img{
+    display: block;
+    border-radius:50%;
+    width: 75px;
+    height: auto;
+    margin-top: 20px;   
+}
+
+/* Pictogram */
+
+.profil > figure {
+    position: relative;
+    display: inline-block;
+}
+
+.profil figcaption {
+    text-align: center;
+    font-size: 5px;
+}
+
+.profil div {
+    display: flex;
+    flex-direction: column; /* Pour disposer les éléments verticalement */
+    align-items: flex-start; /* Aligne les figures à gauche */
+    line-height: 0;
+    gap: 0;
+    margin-top: 5px;
+}
+
+.profil div figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+
+}
+
+.profil div figure img{
+    height: 15px;
+    margin-left: -40px;
+}
+
+.profil {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Lato', arial, sans-serif;
+}
+
+/* réseaux */
+
+.profil figure figure{
+    position: relative;
+    flex-direction: column;
+}
+
+.profil figure figure img {
+    height: 20px;
+    width: auto;
+    margin-left: -65px;
+    margin-top: -10px;
+}
+
+/* Medaille */
+
+.Medaille {
+    position: relative;
+    border-collapse: collapse; /* Pas d'espacement entre les cellules */
+    font-size: 5px;
+    font-family: 'Lato', Arial, sans-serif;
+    margin-left: 10px;
+    height: 0;
+    width: 370px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.Medaille th, td {
+    border: 1px solid #ddd;
+    padding: 1px;
+    text-align: center;
+}
+
+.Medaille tr > td > img {
+    height: 10px;
+    width: auto;
+}
+
+.Medaille th {
+    background-color: #2b5094;
+    color: white;
+}
+
+.Medaille td:nth-child(2), th:nth-child(2) {
+    background-color: #c69340; /* Couleur pour la deuxième colonne */
+}
+
+.Medaille td:nth-child(3), th:nth-child(3) {
+    background-color: #888888; /* Couleur pour la troisième colonne */
+}
+
+.Medaille td:nth-child(4), th:nth-child(4) {
+    background-color: #B47B27; /* Couleur pour la quatrième colonne */
+}
+
+
+/* Actu */
+
+.Actu {
+    font-family: 'Montserrat_SemiBold', Arial, sans-serif;
+    display: flex ;
+}
+
+.Actu > figure {
+    text-align: center;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    margin-left: 21%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.Actu > figure img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.Actu figcaption{
+    font-size: 10px;
+    width:180px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Jo participation */
+  
+.participation-container {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    transition: transform 0.5s ease, height 0.5s ease;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+}
+  
+.title {
+    background-color: #f0a500;
+    color: white;
+    font-weight: bold;
+    font-size: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+  
+.year {
+    background-color: #0052cc;
+    color: #f0a500;
+    font-size: 6px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #cc8500;
+    transform: scale(1.05);
+}
+  
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: all 0.5s ease;
+}
+  
+.details-container.expanded {
+    width: 260px;
+    height: auto ;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    font-size: 6px;
+}
+
+.year.selected-year {
+    background-color: #ffa726; /* Couleur d'arrière-plan après sélection */
+    color: white; /* Couleur du texte pour une meilleure lisibilité */
+    font-weight: bold; /* Mettre le texte en gras */
+}
+  
+.hidden {
+    display: none;
+}
+  
+.back-button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #cc8500;
+    transform: scale(1.05);
+}
+  
+.details-content h2 {
+    color: #cc8500;
+    margin-bottom: 10px;
+    background-color: #003d99;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.details-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#medals-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+  
+#medals-list li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+#medals-list li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}  
+
+/* Transitions et animations */
+.hidden {
+    display: none;
+}
+
+.year:hover, .back-button:hover {
+    transform: scale(1.1);
+}
+
+/* Biographie */
+
+.bio {
+    margin: 20px;
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 8px;
+    max-width: 480px;
+}
+
+.bio > h2 {
+    margin-top: 0;
+    margin-bottom: -50px;
+    font-family: 'Montserrat_SemiBold', arial, sans-serif;
+}
+
+.bio article:first-of-type h2 {
+    font-family: 'Montserrat_Bold', arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: -5px;
+}
+
+.bio img {
+    display: none;
+}
+
+/* Moment fort */
+
+.moment {
+    font-family: 'Montserrat_Bold', Arial, sans-serif;
+    color: #c69340;
+    background-color: #003d99;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.moment video {
+    height: 150px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 0;
+}
+
+.moment nav {
+    font-size: 10px;
+    line-height: 15px;
+    margin-right: 50px;
+}
+
+.moment nav h2 {
+    margin-left: 40px;
+}
+
+/* Animation */
+img { 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+}
