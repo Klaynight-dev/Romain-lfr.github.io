@@ -387,7 +387,7 @@ p {
 /* Site Web JO*/
 
 .web {
-    margin-top: 90%;
+    margin-top: 95%;
     max-width: 1300px;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -494,6 +494,6 @@ p {
 }
 
 .web .download {
-    width: 10em;
+    width: 20em;
     font-size: 2em;
 }
