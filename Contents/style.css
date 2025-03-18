@@ -140,7 +140,7 @@ body {
 
 /* Portfolio */
 
-main div:first-child {
+body div:first-child {
     padding: 30px;
     background: var(--background-color);
     text-align: center;
