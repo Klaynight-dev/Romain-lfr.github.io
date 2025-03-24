@@ -498,7 +498,7 @@ p {
     font-size: 2em;
 }
 
-@media screen and (max-width: 780px) /* Zoom 400 % */
+@media screen and (max-width: 650px) /* Zoom 400 % */
 {
 
 /* Style du body */
